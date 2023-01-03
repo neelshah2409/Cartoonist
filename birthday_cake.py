@@ -1,0 +1,98 @@
+import turtle
+
+wn = turtle.Screen()
+wn.title("Birthday Cake")
+wn.bgcolor("yellow")
+
+
+t = turtle.Turtle()
+t.pencolor("black")
+
+# Base
+t.penup()
+t.setpos(-300, -130)
+t.pendown()
+t.speed(5)
+t.begin_fill()
+t.color("black")
+t.forward(600)
+t.right(90)
+t.forward(10)
+t.right(90)
+t.forward(600)
+t.right(90)
+t.forward(10)
+t.end_fill()
+t.penup()
+t.right(90)
+t.forward(100)
+t.left(90)
+
+# layer1
+t.pendown()
+t.begin_fill()
+t.fillcolor("blue")
+t.forward(100)
+t.right(90)
+t.forward(400)
+t.right(90)
+t.forward(100)
+t.end_fill()
+t.left(180)
+t.forward(100)
+t.left(90)
+t.forward(50)
+t.right(90)
+
+# layer2
+t.begin_fill()
+t.fillcolor("pink")
+t.forward(100)
+t.left(90)
+t.forward(300)
+t.left(90)
+t.forward(100)
+t.end_fill()
+
+t.left(180)
+t.forward(100)
+t.right(90)
+t.forward(50)
+t.left(90)
+
+# layer3
+t.begin_fill()
+t.fillcolor("skyblue")
+t.forward(100)
+t.right(90)
+t.forward(200)
+t.right(90)
+t.forward(100)
+t.end_fill()
+t.pendown()
+
+
+# Candle
+t.left(180)
+t.forward(100)
+t.left(90)
+t.forward(110)
+t.right(90)
+t.begin_fill()
+t.fillcolor("green")
+t.forward(80)
+t.right(90)
+t.forward(10)
+t.right(90)
+t.forward(80)
+t.end_fill()
+
+
+t.penup()
+t.setpos(340, -200)
+t.color("black")
+style = (15)
+t.write("HAPPY  BIRTHDAY", font=style,  align="Right")
+t.pendown()
+t.hideturtle()
+turtle.done()
