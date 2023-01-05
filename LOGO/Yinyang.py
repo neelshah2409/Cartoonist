@@ -1,7 +1,7 @@
 import turtle
 
 yy = turtle.Turtle()
-yy.speed(speed='fastest')
+yy.speed('fastest')
 
 window = turtle.Screen()
 window.title("YinYang")
@@ -35,10 +35,9 @@ def main():
     yy.reset()
     yinyang(200, "black", "white")
     yinyang(200, "white", "black")
-    yy.st()
+    yy.showturtle()
     return "yinyang"
 
 if __name__ == '__main__':
     main()
 turtle.done()
-
