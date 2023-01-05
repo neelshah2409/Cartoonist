@@ -1,0 +1,51 @@
+import turtle
+
+win = turtle.Screen()
+win.title("Volkswagon")
+win.bgcolor("white")
+
+t = turtle.Turtle()
+t.pencolor("#01184F")
+t.pensize(15)
+t.penup()
+t.setposition(0, -150)
+t.pendown()
+circle_radius = 200
+gap = 12
+t.circle(circle_radius)
+t.penup()
+t.left(90)
+t.forward((circle_radius)+gap)
+t.left(30)
+t.pendown()
+t.forward(circle_radius-gap)
+t.penup()
+t.right(180)
+t.forward(circle_radius-gap)
+t.left(120)
+t.pendown()
+t.forward(circle_radius-gap)
+
+t.penup()
+t.right(180)
+t.forward(circle_radius+(gap*2))
+t.pendown()
+t.forward(circle_radius-60)
+t.right(120)
+t.forward(circle_radius+gap)
+t.right(180)
+t.forward(circle_radius+gap)
+t.penup()
+t.left(120)
+t.forward(circle_radius-60)
+t.right(60)
+t.pendown()
+t.forward(gap*3)
+t.right(60)
+t.forward(circle_radius-60)
+t.left(120)
+t.forward(circle_radius+gap)
+
+
+
+turtle.done()
