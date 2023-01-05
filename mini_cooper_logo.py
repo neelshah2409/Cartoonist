@@ -7,7 +7,7 @@ win.bgcolor("White")
 t = turtle.Turtle()
 t.pencolor("Black")
 t.pensize(3)
-t.speed(100)
+t.speed(10)
 radius = 100
 t.penup()
 t.setposition(0, -radius)
